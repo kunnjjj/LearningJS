@@ -1,0 +1,23 @@
+Everything in JS happens inside an execution context.
+
+execution context has 2 major components.
+1. Memory component all variables and functions are stored here (Variable Environment)
+2. Code component code is executed line by line (Thread Of execution)
+
+JS is a synchronous single threaded language (one command at a time) in a specific order
+
+2 PHASES
+
+PHASE 1: Memory creation phase 
+JS allocates Memory to all variables and functions in key-value pairs
+Initially all variables are 'undefined' for variables, and all fns are stored entirely
+
+
+PHASE 2: Code execution phase
+actual value of Variable will be placed here now
+whenever a function is called, a smaller execution context is created, which further has its 2 components,
+after completion of this function, the smaller exectuon context gets deleted
+
+Every exection context is pushed to the call stack, on completion of function/code this gets popped off
+
+
